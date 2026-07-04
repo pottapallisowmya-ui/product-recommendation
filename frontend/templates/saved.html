@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Saved Items : SmartShop{% endblock %}
+
+{% block content %}
+<div style="max-width:900px; margin:20px auto; padding:20px; background:white; border-radius:8px;">
+    <h1 style="font-weight: normal; margin-bottom: 10px;">Saved for later</h1>
+    {% if items and items|length > 0 %}
+    <div style="display:flex; flex-direction:column; gap:12px;">
+        {% for it in items %}
+        <div style="display:flex; gap:12px; align-items:center; border-bottom:1px solid #eee; padding-bottom:12px;">
+            <img src="{{ it.image }}" alt="{{ it.name }}" style="width:100px; height:100px; object-fit:cover;">
+            <div style="flex:1;">
+                <div style="font-weight:600">{{ it.name }}</div>
+                <div style="color:#b12704; font-weight:700; margin-top:6px;">₹{{ it.price }}</div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+                <button onclick="moveSavedToCart({{ it.id }})" style="padding:8px 12px; background:#ffd814; border-radius:6px; border:1px solid #fcd200">Move to cart</button>
+                <a href="/product/{{ it.id }}">View</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>No saved items yet.</p>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 PRODUCT RECOMMENDATION SYSTEM
 
 This is a web-based Product Recommendation System developed using Python and Flask. It helps users find products through personalized recommendations and provides a simple, interactive shopping experience.
@@ -22,3 +23,4 @@ This is a web-based Product Recommendation System developed using Python and Fla
 • AI Chatbot for User Assistance  
 • Displays the Most Affordable Website for the Selected Product  
 • Creative and User-Friendly UI Design Across All Pages
+

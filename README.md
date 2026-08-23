@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-PRODUCT RECOMMENDATION SYSTEM
+<<<<<<< PRODUCT RECOMMENDATION SYSTEM
 
 This is a web-based Product Recommendation System developed using Python and Flask. It helps users find products through personalized recommendations and provides a simple, interactive shopping experience.
 
